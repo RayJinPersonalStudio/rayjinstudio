@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Infinity New Tab</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/ico128.png">
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+ -->
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="images/InfinityNewtab.png">
+    <link rel="icon" href="images/InfinityNewtab.png"><!-- 桌面图标 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="InfinityNewTab"><!-- 启动页 -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/addtohomescreen.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108623857-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108623857-5');
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <div class="header-logo"><img src="etc/logo.svg" alt></div>
+        <div id="search">
+            <div class="search-input">
+                <div class="search-input-box" id="currentSearch">
+                    <div class="search-logo"><img src="images/baidu.png" alt id="currentSearchLogo"> <img src="etc/search-change.svg" class="change-search-ico" alt></div>
+                    <div class="input-content">
+                        <form action method="post" id="searchSubmit"><label><input type="search" id="searchInput" autocomplete="off"></label></form>
+                    </div>
+                </div>
+                <div id="search-suggestion"></div>
+                <div id="search-list">
+                    <ul>
+                        <li data-search_type="google"><img src="images/google.png" alt></li>
+                        <li data-search_type="baidu"><img src="images/baidu.png" alt></li>
+                        <li data-search_type="bing"><img src="images/bing.png" alt></li>
+                        <li data-search_type="yahoo"><img src="images/yahoo.png" alt></li>
+                        <li data-search_type="360"><img src="images/360.png" alt></li>
+                    </ul>
+                    <ul id="second-ul">
+                        <li data-search_type="sogou"><img src="images/sogou.png" alt></li>
+                        <li data-search_type="duckduckgo"><img src="images/duckduckgo.png" alt></li>
+                        <li data-search_type="yandex"><img src="images/yandex.png" alt></li>
+                        <li class="empt-item"><img src="images/duckduckgo.png" alt></li>
+                        <li class="empt-item"><img src="images/duckduckgo.png" alt></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="ul-box">
+            <ul id="list-item"></ul>
+        </div>
+    </div>
+  <!--    <div id="remindBrowerTopBox"></div>提醒添加到桌面 
+    <div id="remindHomeTopBox"></div>-->
+</body>
+
+</html>
+<script src="js/zepto.min.js"></script>
+<script src="js/element-resize-detector.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/index.js"></script>
